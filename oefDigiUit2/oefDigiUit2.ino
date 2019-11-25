@@ -15,6 +15,12 @@ void loop() {
 
 for (int i = 0; i < 50; i++) {
   for (int t = 0; t < 3; t++){ 
+    knipper(i);
+  }
+  }
+}
+
+void knipper(int i){
   int sec = 1000;
   int delayPeriod = sec/(i+1);  
   digitalWrite(ledPin10, HIGH);
@@ -28,7 +34,5 @@ for (int i = 0; i < 50; i++) {
   digitalWrite(ledPin4, LOW);
   delay(delayPeriod);   
   Serial.println("delay is "+ String(delayPeriod));
-  
-  }
-  }
 }
+
